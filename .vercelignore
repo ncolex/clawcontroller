@@ -1,0 +1,11 @@
+# Vercel deployment ignores these
+node_modules
+backend
+bin
+data
+logs
+screenshots
+*.py
+*.sh
+.env.local
+.gitignore

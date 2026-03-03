@@ -1,0 +1,22 @@
+# OPENCLAW WS DISPATCHER - INSERT THIS CODE
+# ─────────────────────────────────────────────────────────────────────────────
+# 
+# WHERE TO INSERT:
+# Find your WebSocket message dispatcher in OpenClaw.
+# Look for a pattern like this:
+#
+#   if message.get("event") == "some_event":
+#       await handle_some_event(message)
+#   elif message.get("event") == "another_event":
+#       await handle_another_event(message)
+#
+# INSERT THE CODE BELOW as the last 'elif' before any 'else' or default handler.
+# ─────────────────────────────────────────────────────────────────────────────
+
+elif message.get("event") == "agent_soul_updated":
+    from openclaw.soul_reload import handle_soul_updated
+    await handle_soul_updated(message, session_manager)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# END OF INSERT
+# ─────────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,653 @@
+## **CLAWCONTROLLER - RESUMEN TÉCNICO COMPLETO**
+
+### **VISIÓN GENERAL**
+
+**ClawController** es un dashboard de gestión de tareas para agentes de IA OpenClaw. Proporciona una interfaz visual tipo "centro de mando" donde los usuarios pueden organizar, asignar y rastrear el trabajo de múltiples agentes de IA.
+
+**Problema que resuelve:** Los agentes OpenClaw trabajan en sesiones aisladas sin visibilidad centralizada. ClawController añade gestión de workflow estructurado con estados, asignación, y aprobación.
+
+**Sitio web:** https://clawcontroller.com  
+**Repositorio:** https://github.com/mdonan90/ClawController  
+**Licencia:** MIT
+
+---
+
+### **ARQUITECTURA TÉCNICA**
+
+#### **Stack Tecnológico**
+
+**Backend:**
+- Framework: FastAPI (Python 3.10+)
+- Base de datos: SQLite con SQLAlchemy ORM
+- WebSockets: Para actualizaciones en tiempo real
+- Servidor: Uvicorn (puerto 8000)
+- Dependencias principales: fastapi, uvicorn, sqlalchemy, pydantic, websockets
+
+**Frontend:**
+- Framework: React 19 + Vite
+- UI: Tailwind CSS 4
+- State Management: Zustand
+- Drag & Drop: @dnd-kit/core, @dnd-kit/sortable
+- Iconos: Lucide React
+- Utilidades: date-fns, react-router-dom
+- Puerto desarrollo: 5001
+
+---
+
+### **ESTRUCTURA DE DIRECTORIOS**
+
+```
+ClawController/
+├── backend/
+│   ├── main.py              # API FastAPI + endpoints + lógica de negocio
+│   ├── models.py            # Modelos SQLAlchemy (Agent, Task, etc.)
+│   ├── database.py          # Configuración de base de datos
+│   ├── requirements.txt     # Dependencias Python
+│   ├── stuck_task_monitor.py    # Monitor de tareas bloqueadas
+│   └── gateway_watchdog.py      # Monitor de salud del gateway
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx          # Componente principal
+│   │   ├── api.js           # Cliente API
+│   │   ├── store/
+│   │   │   └── useMissionStore.js  # Estado global (Zustand)
+│   │   ├── components/      # Componentes UI
+│   │   │   ├── AgentSidebar.jsx     # Barra lateral de agentes
+│   │   │   ├── KanbanBoard.jsx      # Tablero kanban
+│   │   │   ├── TaskModal.jsx        # Modal de tarea
+│   │   │   ├── ChatWidget.jsx       # Chat en tiempo real
+│   │   │   ├── LiveFeed.jsx         # Feed de actividad
+│   │   │   ├── Header.jsx           # Cabecera
+│   │   │   └── ... (20+ componentes)
+│   │   └── utils/
+│   ├── package.json
+│   └── vite.config.js
+├── bin/
+│   ├── clawcontroller.js    # CLI principal
+│   ├── setup.js             # Script de instalación
+│   └── postinstall.js
+├── data/                    # Datos persistentes
+│   └── mission_control.db   # SQLite database
+├── logs/                    # Logs de ejecución
+├── start.sh                 # Script de inicio
+├── stop.sh                  # Script de parada
+├── vercel.json              # Configuración Vercel
+└── package.json             # Configuración NPM
+```
+
+---
+
+### **MODELOS DE DATOS (Database Schema)**
+
+#### **Agent**
+```python
+id: str (UUID)
+name: str
+role: Enum(LEAD, INT, SPC)
+description: str
+avatar: str (emoji)
+status: Enum(WORKING, IDLE, STANDBY, OFFLINE)
+workspace: str (ruta)
+token: str (autenticación)
+primary_model: str
+fallback_model: str
+current_model: str
+model_failure_count: int
+```
+
+#### **Task**
+```python
+id: str (UUID)
+title: str
+description: str
+status: Enum(INBOX, ASSIGNED, IN_PROGRESS, REVIEW, DONE)
+priority: Enum(NORMAL, URGENT)
+tags: JSON array
+assignee_id: str (FK → Agent)
+reviewer_id: str (FK → Agent, default: 'main')
+created_at: datetime
+updated_at: datetime
+due_at: datetime (opcional)
+```
+
+#### **Comment**
+```python
+id: str (UUID)
+task_id: str (FK → Task)
+agent_id: str (FK → Agent)
+content: str
+created_at: datetime
+```
+
+#### **Deliverable**
+```python
+id: str (UUID)
+task_id: str (FK → Task)
+title: str
+completed: bool
+completed_at: datetime
+file_path: str
+```
+
+#### **ChatMessage**
+```python
+id: str (UUID)
+agent_id: str (FK → Agent)
+content: str
+created_at: datetime
+```
+
+#### **ActivityLog**
+```python
+id: str (UUID)
+activity_type: str
+agent_id: str
+task_id: str
+description: str
+created_at: datetime
+```
+
+#### **RecurringTask**
+```python
+id: str (UUID)
+title: str
+description: str
+priority: Enum
+tags: JSON array
+assignee_id: str
+schedule_type: str (daily, weekly, hourly, cron)
+schedule_value: str
+schedule_time: str (HH:MM)
+is_active: bool
+last_run_at: datetime
+next_run_at: datetime
+run_count: int
+```
+
+#### **RecurringTaskRun**
+```python
+id: str (UUID)
+recurring_task_id: str (FK)
+task_id: str (FK → Task spawned)
+run_at: datetime
+status: str (success, failed)
+```
+
+#### **TaskActivity** (nuevo)
+```python
+id: str (UUID)
+task_id: str (FK → Task)
+agent_id: str (FK → Agent)
+message: str
+timestamp: datetime
+```
+
+---
+
+### **WORKFLOW DE TAREAS**
+
+#### **Estados (Task Lifecycle)**
+```
+INBOX → ASSIGNED → IN_PROGRESS → REVIEW → DONE
+```
+
+**Descripción de estados:**
+
+| Estado | Descripción | Trigger |
+|--------|-------------|---------|
+| **INBOX** | Sin asignar, necesita triage | Default al crear |
+| **ASSIGNED** | Asignado a agente, no iniciado | Asignación manual/auto |
+| **IN_PROGRESS** | Agente trabajando activamente | Primera actividad log |
+| **REVIEW** | Trabajo completo, necesita aprobación | Agente dice "completed/done" |
+| **DONE** | Aprobado y cerrado | Aprobación manual (REVIEW GATE) |
+
+**Regla importante:** Los agentes NO pueden establecer DONE directamente. Deben pasar por REVIEW. Solo el reviewer puede aprobar.
+
+---
+
+### **API ENDPOINTS PRINCIPALES**
+
+#### **Agents**
+```
+GET    /api/agents                    # Listar agentes
+GET    /api/agents/{id}               # Obtener agente
+PATCH  /api/agents/{id}/status        # Actualizar status
+POST   /api/agents/generate           # Generar config con IA
+POST   /api/agents                    # Crear agente
+PATCH  /api/agents/{id}               # Actualizar agente
+DELETE /api/agents/{id}               # Eliminar agente
+GET    /api/agents/{id}/files         # Obtener archivos
+PUT    /api/agents/{id}/files         # Actualizar archivos
+```
+
+#### **Tasks**
+```
+GET    /api/tasks                     # Listar tareas (filtros: status, assignee_id)
+POST   /api/tasks                     # Crear tarea
+GET    /api/tasks/{id}                # Obtener tarea
+PATCH  /api/tasks/{id}                # Actualizar tarea
+DELETE /api/tasks/{id}                # Eliminar tarea
+POST   /api/tasks/{id}/activity       # Log actividad
+GET    /api/tasks/{id}/activity       # Obtener actividad
+POST   /api/tasks/{id}/comments       # Añadir comentario
+POST   /api/tasks/{id}/deliverables   # Añadir deliverable
+POST   /api/tasks/{id}/review         # Aprobar/rechazar (action: approve/reject/send_to_review)
+POST   /api/tasks/{id}/route          # Route to agent with fresh context
+```
+
+#### **Chat**
+```
+GET    /api/chat                      # Obtener mensajes
+POST   /api/chat                      # Enviar mensaje
+POST   /api/chat/send-to-agent        # Route to OpenClaw agent
+```
+
+#### **Recurring Tasks**
+```
+GET    /api/recurring                 # Listar
+POST   /api/recurring                 # Crear
+PATCH  /api/recurring/{id}            # Actualizar
+DELETE /api/recurring/{id}            # Eliminar
+POST   /api/recurring/{id}/trigger    # Trigger manual
+GET    /api/recurring/{id}/runs       # Historial de ejecuciones
+```
+
+#### **OpenClaw Integration**
+```
+GET    /api/openclaw/agents           # Agentes desde config OpenClaw
+GET    /api/openclaw/status           # Check disponibilidad
+POST   /api/openclaw/import           # Importar agentes
+```
+
+#### **WebSocket**
+```
+WS     /ws                            # Conexión real-time
+```
+
+**Eventos broadcast:**
+- `task_created`, `task_updated`, `task_deleted`
+- `task_reviewed`, `comment_added`
+- `chat_message`, `announcement`
+- `activity`, `agent_status`
+- `recurring_created`, `recurring_updated`, `recurring_deleted`
+
+---
+
+### **INTEGRACIÓN CON OPENCLAW**
+
+#### **Detección de Estado en Tiempo Real**
+
+El backend monitorea los archivos de sesión de OpenClaw:
+```python
+sessions_dir = ~/.openclaw/agents/{agent_id}/sessions/
+```
+
+**Lógica de status:**
+- **WORKING:** Sesión activa en últimos 5 minutos
+- **IDLE:** Actividad en últimos 30 minutos
+- **STANDBY:** Configurado pero sin actividad reciente
+- **OFFLINE:** No configurado o unreachable
+
+#### **Monitor de Sesiones (Background Task)**
+```python
+# Cada 10 segundos:
+1. Ejecuta: openclaw sessions list --json
+2. Parsea sesiones activas (actualizadas en últimos 60s)
+3. Busca tareas ASSIGNED con esos agentes
+4. Auto-transición: ASSIGNED → IN_PROGRESS
+```
+
+#### **Notificaciones a Agentes**
+Cuando ocurren eventos, se notifica vía OpenClaw CLI:
+```bash
+openclaw agent --agent {agent_id} --message "{mensaje}"
+```
+
+**Eventos que notifican:**
+- Tarea asignada a agente
+- Tarea enviada a REVIEW
+- Tarea aprobada (DONE)
+- Tarea rechazada (con feedback)
+
+---
+
+### **AUTO-ASIGNACIÓN**
+
+#### **Configuración**
+```python
+# backend/main.py
+ASSIGNMENT_RULES = {
+    "coding": "dev",
+    "frontend": "dev",
+    "trading": "trader",
+    "analysis": "analyst",
+    "marketing": "brand",
+    "writing": "writer",
+    "design": "designer",
+}
+```
+
+**Funcionamiento:**
+1. Al crear tarea con tags, busca match en reglas
+2. Primer match gana
+3. Asigna automáticamente al agente
+4. Status: INBOX → ASSIGNED
+
+---
+
+### **FRONTEND - COMPONENTES PRINCIPALES**
+
+#### **App.jsx**
+Componente raíz. Inicializa store, conecta WebSocket, renderiza layout:
+- Header (logo, notifications, stats)
+- AgentSidebar (lista de agentes con status)
+- KanbanBoard (tablero de tareas)
+- LiveFeed (actividad reciente)
+- ChatWidget (chat en tiempo real)
+- TaskModal (detalle de tarea)
+
+#### **useMissionStore.js (Zustand)**
+Estado global con:
+- `agents[]`, `tasks[]`, `recurringTasks[]`
+- `squadMessages[]`, `liveFeed[]`
+- `notifications[]`, `stats`
+- UI states: `selectedTaskId`, `isChatOpen`, etc.
+- Actions: `createTask`, `moveTask`, `addComment`, `addChatMessage`
+
+#### **KanbanBoard.jsx**
+Tablero drag-and-drop con columnas:
+- INBOX, ASSIGNED, IN PROGRESS, REVIEW, DONE
+- Usa @dnd-kit/core y @dnd-kit/sortable
+- Cada columna filtra tareas por status
+
+#### **AgentSidebar.jsx**
+Lista de agentes con:
+- Avatar (emoji), nombre, role badge
+- Status indicator (colores: green=WORKING, yellow=IDLE, gray=STANDBY, red=OFFLINE)
+- Click para filtrar tareas por agente
+
+#### **ChatWidget.jsx**
+Chat en tiempo real:
+- Mensajes de usuarios y agentes
+- Soporte para @mentions
+- Routing a agentes OpenClaw
+- Indicador de typing
+
+---
+
+### **CONFIGURACIÓN DE DESPLIEGUE**
+
+#### **Vercel (vercel.json)**
+```json
+{
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
+  "devCommand": "cd frontend && npm run dev",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://tu-cloudflare-tunnel/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/:path*",
+      "headers": [
+        {"key": "Access-Control-Allow-Origin", "value": "*"},
+        {"key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, DELETE, OPTIONS"},
+        {"key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization"}
+      ]
+    }
+  ]
+}
+```
+
+#### **Variables de Entorno (.env)**
+```
+VITE_API_URL=http://localhost:8000
+VITE_OPENCLAW_TOKEN=xxx
+DATABASE_URL=sqlite:///./data/mission_control.db
+OPENCLAW_CONFIG_PATH=~/.openclaw/config.yaml
+```
+
+---
+
+### **SCRIPTS DE EJECUCIÓN**
+
+#### **start.sh**
+```bash
+#!/bin/bash
+# 1. Mata procesos existentes
+# 2. Inicia backend: uvicorn main:app --port 8000
+# 3. Inicia frontend: npm run dev -- --port 5001
+# 4. Verifica servicios
+# 5. Muestra URLs: Dashboard http://localhost:5001, API http://localhost:8000
+```
+
+#### **stop.sh**
+```bash
+#!/bin/bash
+pkill -f "uvicorn main:app.*8000"
+pkill -f "vite.*5001"
+```
+
+---
+
+### **CARACTERÍSTICAS CLAVE**
+
+#### **1. Kanban Board**
+- Drag-and-drop entre columnas
+- Filtro por agente
+- Tarjetas con: título, tags, prioridad, assignee, comments count, deliverables progress
+
+#### **2. Agent Management**
+- Crear agentes manualmente o con IA (descripción → config)
+- Editar SOUL.md (personalidad) y TOOLS.md (herramientas)
+- Importar desde OpenClaw config
+- Status en tiempo real
+
+#### **3. Task Modal**
+- Vista detallada de tarea
+- Campos editables: título, descripción, prioridad, tags, assignee, reviewer, due date
+- Checklist de deliverables
+- Comentarios con @mentions
+- Historial de actividad específico de tarea
+- Botones: move forward, send back, approve, delete
+
+#### **4. Chat Widget**
+- Chat tipo Slack
+- Mensajes a agentes individuales (@agent)
+- Respuestas en tiempo real
+- Typing indicators
+
+#### **5. Live Feed**
+- Actividad reciente (últimas 50)
+- Tipos: task_created, status_changed, comment_added, announcement
+- Actualización WebSocket
+
+#### **6. Recurring Tasks**
+- Programación cron: daily, weekly, hourly, custom cron
+- Historial de ejecuciones
+- Pause/unpause
+- Trigger manual
+
+#### **7. Notifications**
+- Notificaciones internas por @mentions
+- Contador de no leídas
+- Click para ir a tarea
+
+#### **8. Backup/Restore**
+- Exportar configuración a JSON
+- Importar configuración
+
+---
+
+### **MONITORES DE FONDO**
+
+#### **OpenClaw Session Monitor**
+- Detecta actividad de agentes
+- Auto-transición ASSIGNED → IN_PROGRESS
+
+#### **Stuck Task Monitor**
+- Detecta tareas bloqueadas (sin actividad > X tiempo)
+- Notifica al lead agent
+
+#### **Gateway Watchdog**
+- Monitor de salud del gateway
+- Auto-reinicio si falla
+
+---
+
+### **INSTRUCCIONES PARA AGENTES (AGENT_INSTRUCTIONS.md)**
+
+#### **Para Lead Agents (Orquestadores)**
+```bash
+# 1. Crear tarea con assignee
+POST /api/tasks {title, description, assignee_id, status: ASSIGNED}
+
+# 2. Log delegación
+POST /api/tasks/{id}/activity {agent_id: "main", message: "Delegating to X"}
+
+# 3. Route con contexto fresco
+POST /api/tasks/{id}/route
+
+# 4. Aprobar cuando completado
+POST /api/tasks/{id}/review {action: "approve", agent_id: "main"}
+```
+
+#### **Para Worker Agents**
+```bash
+# Log progreso mientras trabajas
+POST /api/tasks/{id}/activity {agent_id: "dev", message: "Working on X"}
+
+# Cuando termines
+POST /api/tasks/{id}/activity {agent_id: "dev", message: "✅ Completed: summary"}
+PATCH /api/tasks/{id} {status: "REVIEW"}
+```
+
+**Reglas clave:**
+- Siempre loguear actividad
+- Nunca setting DONE directamente
+- Usar REVIEW gate
+
+---
+
+### **PUNTOS DE INTEGRACIÓN PARA FUSIÓN**
+
+Si quieres fusionar este proyecto con otro, estos son los puntos clave:
+
+#### **1. Base de Datos**
+- SQLite en `backend/data/mission_control.db`
+- Modelos en `backend/models.py`
+- Fácil de migrar a PostgreSQL
+
+#### **2. API Backend**
+- FastAPI en `backend/main.py` (3265 líneas)
+- Endpoints REST + WebSocket
+- Lógica de negocio: notificaciones, auto-asignación, review gate
+
+#### **3. Frontend**
+- React + Vite en `frontend/`
+- Zustand store en `frontend/src/store/useMissionStore.js`
+- 20+ componentes en `frontend/src/components/`
+
+#### **4. Integración OpenClaw**
+- Lee config de `~/.openclaw/openclaw.json`
+- Monitorea sesiones en `~/.openclaw/agents/{id}/sessions/`
+- Notifica vía CLI: `openclaw agent --agent {id} --message "{msg}"`
+
+#### **5. Sistema de Notificaciones**
+- Interno: tabla `notifications` + WebSocket
+- Externo: OpenClaw CLI subprocess
+
+#### **6. Auto-Assignment**
+- Diccionario `ASSIGNMENT_RULES` en `main.py`
+- Fácil de extender con lógica custom
+
+#### **7. Recurring Tasks**
+- Sistema cron propio
+- Tablas: `recurring_tasks`, `recurring_task_runs`
+
+---
+
+### **DEPENDENCIAS CLAVE**
+
+**Python (backend/requirements.txt):**
+```
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+sqlalchemy>=2.0.0
+python-multipart>=0.0.6
+websockets>=12.0
+pydantic>=2.0.0
+```
+
+**NPM (frontend/package.json):**
+```json
+{
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.563.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.113.0",
+    "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.2.4",
+    "eslint": "^9.39.1"
+  }
+}
+```
+
+---
+
+### **URLS Y PUERTOS**
+
+| Servicio | URL | Puerto |
+|----------|-----|--------|
+| Frontend (dev) | http://localhost:5001 | 5001 |
+| Backend API | http://localhost:8000 | 8000 |
+| WebSocket | ws://localhost:8000/ws | 8000 |
+| Dashboard (prod) | https://clawcontroller.com | - |
+
+---
+
+### **ESTADOS Y COLORES**
+
+**Agent Status:**
+- WORKING: 🟢 Verde (pulsing)
+- IDLE: 🟡 Amarillo
+- STANDBY: ⚫ Gris
+- OFFLINE: 🔴 Rojo
+
+**Task Priority:**
+- NORMAL: Azul
+- URGENT: Rojo
+
+**Task Status:**
+- INBOX: Gris
+- ASSIGNED: Azul
+- IN_PROGRESS: Amarillo
+- REVIEW: Naranja
+- DONE: Verde
+
+---
+
+### **VERSION**
+
+- **Versión actual:** 1.1.3
+- **Autor:** Mike O'Nan <mike@clawcontroller.com>
+- **Node mínimo:** 18.0.0
+- **Python mínimo:** 3.10
+
+---
+
+**FIN DEL DOCUMENTO**

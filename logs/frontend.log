@@ -1,0 +1,11 @@
+
+> frontend@0.0.0 dev
+> vite --port 5001 --host 0.0.0.0
+
+
+  VITE v7.3.1  ready in 687 ms
+
+  ➜  Local:   http://localhost:5001/
+  ➜  Network: http://192.168.1.64:5001/
+  ➜  Network: http://100.68.97.58:5001/
+  ➜  Network: http://172.19.0.1:5001/

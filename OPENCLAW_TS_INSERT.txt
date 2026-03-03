@@ -1,0 +1,85 @@
+# OPENCLAW TYPESCRIPT - WS EVENT HANDLER INSERT
+# ─────────────────────────────────────────────────────────────────────────────
+# 
+# DONDE INSERTAR:
+# OpenClaw recibe eventos broadcast desde ClawController vía WebSocket.
+# Necesitas añadir el handler en el archivo que procesa eventos entrantes.
+#
+# Opción 1: En gateway/server-methods/agents.ts
+# Busca donde se manejan eventos y añade:
+#
+#   case "agent_soul_updated":
+#     await handle_soul_updated(event, sessionManager);
+#     break;
+#
+# Opción 2: Crear un listener dedicado
+# En gateway/server.ts o donde se registren los event listeners:
+#
+#   context.on("agent_soul_updated", async (event) => {
+#     await handle_soul_updated(event, sessionManager);
+#   });
+#
+# ─────────────────────────────────────────────────────────────────────────────
+
+// INSERTAR ESTE BLOQUE en tu handler de eventos WebSocket:
+
+case "agent_soul_updated":
+  {
+    // Import dinámico para evitar circular dependencies
+    const { handle_soul_updated } = await import("./soul_reload.js");
+    await handle_soul_updated(event, sessionManager);
+  }
+  break;
+
+// ─────────────────────────────────────────────────────────────────────────────
+# FIN DEL INSERT
+# ─────────────────────────────────────────────────────────────────────────────
+
+## Instrucciones Detalladas
+
+### Paso 1: Copiar Archivos
+Los archivos ya fueron copiados a:
+- `/home/ncx/oc/openclaw/src/gateway/soul_reload.ts`
+- `/home/ncx/oc/openclaw/src/gateway/session_soul_mixin.ts`
+
+### Paso 2: Añadir Mixin a AgentSession
+
+En `src/gateway/session.ts` o donde definas AgentSession:
+
+```typescript
+import { SoulReloadMixin, type SessionWithSoul } from "./session_soul_mixin.js";
+
+class AgentSession extends SoulReloadMixin(BaseSession) {
+  // O con composición:
+  constructor(agent_id: string) {
+    super();
+    this.agent_id = agent_id;
+    this.soul_markdown = '';
+    this.soul_sections = {};
+    this.soul_role = '';
+    this.soul_restrictions = [];
+    this.soul_behavior = [];
+  }
+}
+```
+
+### Paso 3: Registrar Handler de Eventos
+
+En `src/gateway/server.ts` o donde se listen eventos:
+
+```typescript
+import { handle_soul_updated } from "./soul_reload.js";
+
+// Cuando se recibe evento de ClawController
+context.on("agent_soul_updated", async (event) => {
+  await handle_soul_updated(event, sessionManager);
+});
+```
+
+### Paso 4: Reiniciar OpenClaw
+
+```bash
+cd /home/ncx/oc/openclaw
+pnpm restart
+# O el comando que uses para reiniciar
+```

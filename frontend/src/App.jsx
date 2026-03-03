@@ -1,0 +1,119 @@
+import { useEffect } from 'react'
+import './App.css'
+import clawLogo from './assets/clawcontroller-logo.jpg'
+import AgentActivityCharts from './components/AgentActivityCharts'
+import AgentManagement from './components/AgentManagement'
+import AgentSidebar from './components/AgentSidebar'
+import AnnouncementModal from './components/AnnouncementModal'
+import BackupPanel from './components/BackupPanel'
+import ChatWidget from './components/ChatWidget'
+import Header from './components/Header'
+import KanbanBoard from './components/KanbanBoard'
+import LiveFeed from './components/LiveFeed'
+import NewTaskModal from './components/NewTaskModal'
+import OllamaStatusPanel from './components/OllamaStatusPanel'
+import RealTimeAgentMonitor from './components/RealTimeAgentMonitor'
+import RecurringTasksPanel from './components/RecurringTasksPanel'
+import SubagentsPanel from './components/SubagentsPanel'
+import TaskModal from './components/TaskModal'
+import MobileNavBar from './components/MobileNavBar'
+import { useMissionStore } from './store/useMissionStore'
+
+function LoadingScreen() {
+  return (
+    <div className="loading-screen">
+      <div className="loading-content">
+        <img src={clawLogo} alt="ClawController" className="loading-logo" />
+        <h2>ClawController</h2>
+        <p>Initializing systems...</p>
+      </div>
+    </div>
+  )
+}
+
+function ErrorScreen({ error, onRetry }) {
+  return (
+    <div className="error-screen">
+      <div className="error-content">
+        <div className="error-icon">⚠️</div>
+        <h2>Connection Failed</h2>
+        <p>{error}</p>
+        <button className="retry-button" onClick={onRetry}>
+          Retry Connection
+        </button>
+        <p className="error-hint">
+          Make sure the backend is running at http://localhost:8000
+        </p>
+      </div>
+    </div>
+  )
+}
+
+function App() {
+  const initialize = useMissionStore((state) => state.initialize)
+  const connectWebSocket = useMissionStore((state) => state.connectWebSocket)
+  const disconnectWebSocket = useMissionStore((state) => state.disconnectWebSocket)
+  const refreshAgents = useMissionStore((state) => state.refreshAgents)
+  const isLoading = useMissionStore((state) => state.isLoading)
+  const isInitialized = useMissionStore((state) => state.isInitialized)
+  const error = useMissionStore((state) => state.error)
+  const wsConnected = useMissionStore((state) => state.wsConnected)
+
+  useEffect(() => {
+    // Initialize data on mount
+    initialize()
+    
+    // Connect WebSocket
+    connectWebSocket()
+    
+    // Refresh agent status every 30 seconds for real-time updates
+    const agentRefreshInterval = setInterval(() => {
+      refreshAgents()
+    }, 30000)
+    
+    // Cleanup on unmount
+    return () => {
+      disconnectWebSocket()
+      clearInterval(agentRefreshInterval)
+    }
+  }, [initialize, connectWebSocket, disconnectWebSocket, refreshAgents])
+
+  // Show loading screen while initializing
+  if (isLoading && !isInitialized) {
+    return <LoadingScreen />
+  }
+
+  // Show error screen if initialization failed
+  if (error && !isInitialized) {
+    return <ErrorScreen error={error} onRetry={initialize} />
+  }
+
+  return (
+    <div className="app">
+      <Header />
+      <main className="main">
+        <AgentSidebar />
+        <div className="center-panel">
+          <RealTimeAgentMonitor />
+          <AgentActivityCharts />
+          <KanbanBoard />
+          <SubagentsPanel />
+          <OllamaStatusPanel />
+          <BackupPanel />
+        </div>
+        <div className="right-panel">
+          <LiveFeed />
+        </div>
+      </main>
+      <TaskModal />
+      <AnnouncementModal />
+      <NewTaskModal />
+      <RecurringTasksPanel />
+      <AgentManagement />
+      <ChatWidget />
+      <MobileNavBar />
+    </div>
+  )
+}
+
+export default App

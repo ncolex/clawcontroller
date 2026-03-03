@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+backend/venv/
+__pycache__/
+*.pyc
+.pyo
+
+# Data and logs (user-specific)
+data/
+logs/
+*.db
+*.sqlite
+*.sqlite3
+
+# Build outputs
+frontend/dist/
+frontend/build/
+*.egg-info/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.key
+credentials/
+secrets/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test/Debug
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Misc
+*.log
+*.tmp
+.cache/
+.vercel
+.env*.local
+
+.gemini/
+gha-creds-*.json

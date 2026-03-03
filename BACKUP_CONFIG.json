@@ -1,0 +1,102 @@
+{
+  "backup_info": {
+    "title": "OpenClaw & ClawController Master Config",
+    "description": "Respaldo Vital en Google Drive - AI_Projects_Backup",
+    "last_backup": "2026-02-28T12:00:00Z",
+    "google_drive": {
+      "folder": "AI_Projects_Backup",
+      "document": "OpenClaw & ClawController Master Config"
+    }
+  },
+  "urls": {
+    "vercel": "https://clawcontroller.vercel.app",
+    "tailscale": "https://ncx.tailnet.ts.net",
+    "local": "http://localhost:5001",
+    "backend": "http://localhost:8000",
+    "ollama": "http://localhost:11434"
+  },
+  "tokens": {
+    "VITE_OPENCLAW_TOKEN": "dfb4fada55757c3664799f9d3ff294208ff235165b801d17",
+    "note": "Token stored securely in .env.local"
+  },
+  "config_paths": {
+    "openclaw_config": "/home/ncx/.openclaw/openclaw.json",
+    "clawcontroller_config": "/home/ncx/.clawcontroller/vercel.json",
+    "clawcontroller_data": "/home/ncx/.clawcontroller/data/",
+    "ollama_models": "/home/ncx/.ollama/models/",
+    "backend_log": "/home/ncx/.clawcontroller/logs/backend.log",
+    "openclaw_logs": "/home/ncx/.openclaw/logs/"
+  },
+  "deployment": {
+    "architecture": {
+      "frontend": "Vercel (React + Vite)",
+      "backend": "Local (FastAPI + Uvicorn)",
+      "tunnel": "Cloudflare Tunnel",
+      "ai_models": "Ollama Local + Cloud APIs"
+    },
+    "instructions": {
+      "deploy_frontend": "cd /home/ncx/.clawcontroller && vercel --prod --yes",
+      "start_backend": "cd /home/ncx/.clawcontroller/backend && source venv/bin/activate && python -m uvicorn main:app --host 0.0.0.0 --port 8000",
+      "start_tunnel": "/tmp/cloudflared tunnel --url http://localhost:8000",
+      "update_tunnel_url": "Edit vercel.json rewrites.destination with new tunnel URL"
+    }
+  },
+  "systemd_services": {
+    "ollama": {
+      "service": "ollama.service",
+      "auto_start": true,
+      "status": "enabled"
+    },
+    "clawcontroller": {
+      "service": "clawcontroller.service",
+      "auto_start": true,
+      "status": "enabled"
+    },
+    "lingering": {
+      "enabled": true,
+      "user": "ncx",
+      "description": "Services start even without user login"
+    }
+  },
+  "models_installed": [
+    "llama2:latest",
+    "gemma3:1b",
+    "orca-mini:latest",
+    "tinyllama:latest",
+    "gemma2:2b",
+    "llama3:latest",
+    "mistral:latest",
+    "phi3:latest",
+    "functiongemma:latest",
+    "smollm2:135m"
+  ],
+  "agents_configured": [
+    {
+      "id": "triage",
+      "name": "Triage",
+      "model": "qwen-portal/coder-model"
+    },
+    {
+      "id": "developer",
+      "name": "DevBot",
+      "model": "qwen-portal/coder-model"
+    },
+    {
+      "id": "api-watchdog",
+      "name": "Watchdog",
+      "model": "ollama/phi3"
+    },
+    {
+      "id": "orchestrator",
+      "name": "Orchestrator",
+      "model": "groq/llama-3.1-70b-versatile"
+    },
+    {
+      "id": "crypto",
+      "name": "CryptoBot",
+      "model": "ollama/rnj-1:8b-cloud"
+    }
+  ],
+  "created_at": "2026-02-28T12:00:00Z",
+  "updated_at": "2026-02-28T12:00:00Z"
+}

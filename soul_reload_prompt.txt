@@ -1,0 +1,183 @@
+# PROMPT PARA GEMINI CLI
+# Uso: gemini < soul_reload_prompt.txt
+# O:   cat soul_reload_prompt.txt | gemini
+# ─────────────────────────────────────────────────────────────────────────────
+
+You are a senior Python backend engineer working on an existing project called OpenClaw.
+
+OpenClaw is an AI agent gateway that:
+- Manages agent sessions
+- Exposes a WebSocket server (currently at ws://localhost:18789)
+- Runs agent processes
+- Loads agent configuration from SOUL.md files at session start
+
+Your task is to add a SOUL hot-reload hook WITHOUT breaking any existing code.
+
+---
+
+## CONTEXT: What already exists (DO NOT MODIFY these patterns)
+
+OpenClaw already has:
+
+1. A WebSocket server running — do not change its port, protocol, or existing message handlers.
+2. Agent session management — agents have an `agent_id` and a `soul_markdown` or config path.
+3. Existing message routing — there is already a dispatch/handler pattern for WS messages.
+4. The gateway already reads SOUL.md or config at session start.
+
+---
+
+## WHAT YOU MUST ADD (additive only — no deletions, no rewrites)
+
+### Goal
+
+When OpenClaw receives a WebSocket message with this shape:
+
+```json
+{
+  "event": "agent_soul_updated",
+  "agent_id": 42,
+  "score": 87
+}
+```
+
+It must:
+
+1. Find the active session for `agent_id` (if one exists).
+2. Fetch the updated SOUL markdown from ClawController's API:
+   `GET http://localhost:8000/api/agents/{agent_id}/soul`
+3. Apply the new SOUL to the running session without killing it.
+4. Log the reload clearly.
+5. If no active session exists for that agent_id, log it and do nothing (no error, no crash).
+6. If the fetch fails, log the error and keep the old SOUL (graceful degradation).
+
+---
+
+## FILES TO CREATE (new files only)
+
+### File 1: `openclaw/soul_reload.py`
+
+Create this module with:
+
+```python
+"""
+soul_reload.py
+Hot-reload handler for SOUL.md updates received via WebSocket.
+Called when event == "agent_soul_updated".
+"""
+```
+
+Implement:
+
+```python
+async def handle_soul_updated(event: dict, session_manager) -> None:
+    """
+    Args:
+        event: the full WS message dict
+        session_manager: your existing session manager object (passed in, not imported)
+    """
+```
+
+Logic inside:
+- Extract `agent_id` from event (int). If missing, log warning and return.
+- Call `session_manager.get_session(agent_id)` — if None, log "No active session for agent {agent_id}, skipping reload" and return.
+- Use `httpx.AsyncClient` to GET `http://{CLAW_CONTROLLER_HOST}/api/agents/{agent_id}/soul`
+  - `CLAW_CONTROLLER_HOST` from env var, default `localhost:8000`
+- If response not 200: log error, return (keep old soul).
+- Parse JSON response, extract `soul_markdown` field (string).
+- Call `session.reload_soul(soul_markdown)` on the session object.
+- Log success: `"SOUL hot-reloaded for agent {agent_id} (score: {score})"`
+
+### File 2: `openclaw/session_soul_mixin.py`
+
+Create a mixin to add `reload_soul()` to your existing session class:
+
+```python
+"""
+session_soul_mixin.py
+Mixin that adds hot-reload SOUL capability to AgentSession.
+Add SoulReloadMixin to your AgentSession base classes.
+"""
+
+class SoulReloadMixin:
+    def reload_soul(self, soul_markdown: str) -> None:
+        """
+        Apply new SOUL.md to this running session.
+        Updates internal config without restarting the process.
+        """
+```
+
+Inside `reload_soul`:
+- Store `soul_markdown` in `self.soul_markdown = soul_markdown`
+- Parse sections: split by `## ` headers into a dict `self.soul_sections`
+- Extract and store:
+  - `self.soul_role` from section "Role"
+  - `self.soul_restrictions` from section "Restrictions" (as list of lines starting with `-`)
+  - `self.soul_behavior` from section "Behavior" (as list of lines starting with `-`)
+- Log `"Session {self.agent_id}: SOUL sections reloaded: {list(self.soul_sections.keys())}"`
+- Do NOT restart subprocess, do NOT close connections, do NOT touch WS handlers.
+
+---
+
+## FILE TO MODIFY (surgical edit only)
+
+### Existing file: your WS message dispatcher
+
+**DO NOT rewrite this file.**
+
+Find where incoming WebSocket messages are dispatched — there will be a pattern like:
+
+```python
+if message["event"] == "something":
+    await handle_something(message)
+```
+
+Add ONE block (additive):
+
+```python
+elif message.get("event") == "agent_soul_updated":
+    from openclaw.soul_reload import handle_soul_updated
+    await handle_soul_updated(message, session_manager)
+```
+
+Insert it as the last `elif` before any `else` or default handler.
+Do NOT touch any other block.
+
+---
+
+## CONSTRAINTS
+
+- Python 3.10+
+- Use only `httpx` for async HTTP (already used in project).
+- Use `logging` module only — no print statements.
+- All functions must be `async` where I/O is involved.
+- Type hints required.
+- Docstrings required on all public functions and classes.
+- No new dependencies beyond `httpx`.
+- No global state — pass session_manager as argument always.
+- No monkey-patching.
+- Graceful degradation on all failure paths (network down, agent not found, bad JSON).
+
+---
+
+## OUTPUT FORMAT
+
+Return in this exact order:
+
+1. Full content of `openclaw/soul_reload.py`
+2. Full content of `openclaw/session_soul_mixin.py`
+3. The exact 3-5 lines to add to the WS dispatcher, with a comment showing WHERE to insert them (before/after what existing line pattern).
+4. One-line instruction for the SQLite migration (if needed — it is NOT needed here, skip).
+5. Any env var to document:
+   `CLAW_CONTROLLER_HOST=localhost:8000`
+
+Do NOT generate:
+- Full rewrites of existing files
+- New database models
+- Frontend code
+- Docker configs
+- CI/CD configs
+- Tests (unless asked)
+
+Produce implementation-ready code only.
+If you are unsure where the WS dispatcher is, output the code and add a comment:
+`# INSERT THIS BLOCK in your WS message dispatcher after existing event handlers`

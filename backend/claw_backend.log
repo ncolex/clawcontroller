@@ -1,0 +1,1629 @@
+INFO:     Started server process [39302]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+BACKEND_STARTUP_VERIFIED_V3
+Database initialized. Add agents via the Agent Management panel.
+ClawController API started
+OpenClaw session monitor started
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     127.0.0.1:51094 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51122 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51136 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51148 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51094 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51156 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51122 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51166 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51176 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:51136 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51148 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     127.0.0.1:51156 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51156 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51136 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51148 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51166 - "GET /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51156 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51094 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51136 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51148 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51156 - "GET /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51166 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51122 - "GET /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51166 - "GET /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47368 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47368 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33686 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33686 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56048 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56048 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41142 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41142 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:42588 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42588 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41948 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41948 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37680 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37680 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58452 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58452 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54286 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54286 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52212 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52212 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     100.68.97.58:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "DELETE /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 431, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 313, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.clawcontroller/backend/main.py", line 2047, in delete_recurring_task
+    if task and task.status not in [TaskStatus.COMPLETE]:
+                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskStatus' has no attribute 'COMPLETE'
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 431, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 313, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.clawcontroller/backend/main.py", line 2004, in update_recurring_task
+    if task and task.status not in [TaskStatus.COMPLETE]:
+                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskStatus' has no attribute 'COMPLETE'
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "DELETE /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 431, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 313, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.clawcontroller/backend/main.py", line 2047, in delete_recurring_task
+    if task and task.status not in [TaskStatus.COMPLETE]:
+                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskStatus' has no attribute 'COMPLETE'
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/monitoring/gateway/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/monitoring/gateway/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     23.27.145.8:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "WebSocket /ws" [accepted]
+INFO:     connection closed
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     2802:8010:4103:2900:7db5:d433:d4fa:e7f8:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     199.45.155.97:0 - "GET / HTTP/1.1" 404 Not Found
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     195.211.77.141:0 - "HEAD / HTTP/1.1" 404 Not Found
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     199.45.155.108:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.228.23.82:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     34.203.215.112:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.228.23.82:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     34.203.215.112:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     34.16.92.107:0 - "GET / HTTP/1.1" 404 Not Found
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 1 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     45.154.98.78:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.154.98.78:0 - "GET //xmlrpc.php?rsd HTTP/1.1" 404 Not Found
+INFO:     45.154.98.78:0 - "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+INFO:     45.154.98.78:0 - "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+INFO:     45.154.98.78:0 - "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+INFO:     45.154.98.78:0 - "GET //2018/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+INFO:     45.154.98.78:0 - "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+INFO:     45.154.98.78:0 - "GET //test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+INFO:     45.154.98.78:0 - "GET //wp2/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+INFO:     45.154.98.78:0 - "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     74.7.230.10:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     74.7.227.59:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     100.54.120.30:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     100.54.120.30:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     44.211.62.11:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     44.211.62.11:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     78.138.8.181:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.43.238.179:0 - "GET / HTTP/1.1" 404 Not Found
+Stuck task check: 1 stuck, 1 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     100.68.97.58:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     74.7.230.10:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     74.7.230.10:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     35.240.237.186:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     35.240.237.186:0 - "GET /wordpress/ HTTP/1.1" 404 Not Found
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/monitoring/gateway/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/monitoring/gateway/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/monitoring/gateway/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+Stuck task check: 1 stuck, 1 notifications sent
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     52.90.134.183:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     100.68.97.58:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+Notified agent developer of task: Descargar y configurar skills de AIRTABLE y de SLACK
+INFO:     100.68.97.58:0 - "POST /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/comments HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+Routed mention to agent orchestrator
+INFO:     100.68.97.58:0 - "POST /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/comments HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "POST /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/chat/send-to-agent HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "POST /api/chat/send-to-agent HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "POST /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/comments HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34014 - "HEAD /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:56432 - "GET /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 87, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 431, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 315, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "/home/ncx/.clawcontroller/backend/main.py", line 813, in get_task
+    "agent": {"id": c.agent.id, "name": c.agent.name, "avatar": c.agent.avatar},
+                    ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'id'
+INFO:     127.0.0.1:47658 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     87.236.176.230:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/monitoring/gateway/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/monitoring/gateway/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 431, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 313, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.clawcontroller/backend/main.py", line 2004, in update_recurring_task
+    if task and task.status not in [TaskStatus.COMPLETE]:
+                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskStatus' has no attribute 'COMPLETE'
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "PATCH /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 431, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 313, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.clawcontroller/backend/main.py", line 2004, in update_recurring_task
+    if task and task.status not in [TaskStatus.COMPLETE]:
+                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskStatus' has no attribute 'COMPLETE'
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "DELETE /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 431, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 313, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.clawcontroller/backend/main.py", line 2047, in delete_recurring_task
+    if task and task.status not in [TaskStatus.COMPLETE]:
+                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskStatus' has no attribute 'COMPLETE'
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "DELETE /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 431, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 313, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.clawcontroller/backend/main.py", line 2047, in delete_recurring_task
+    if task and task.status not in [TaskStatus.COMPLETE]:
+                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskStatus' has no attribute 'COMPLETE'
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54042 - "POST /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/comments HTTP/1.1" 422 Unprocessable Content
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55106 - "POST /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/comments HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     18.207.105.10:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     100.24.97.135:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     18.207.105.10:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     100.24.97.135:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/review HTTP/1.1" 200 OK
+Notified reviewer triage of task needing review: Descargar y configurar skills de AIRTABLE y de SLACK
+INFO:     100.68.97.58:0 - "POST /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/review HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+Notified main agent of task completion: Descargar y configurar skills de AIRTABLE y de SLACK
+INFO:     100.68.97.58:0 - "POST /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/review HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+Stuck task check: 1 stuck, 0 notifications sent
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/855f4c34-11b2-4c26-b873-ab6dbd543db8/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks/855f4c34-11b2-4c26-b873-ab6dbd543db8/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks/855f4c34-11b2-4c26-b873-ab6dbd543db8 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "DELETE /api/tasks/855f4c34-11b2-4c26-b873-ab6dbd543db8 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     172.85.102.168:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     172.85.102.168:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     172.85.102.168:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+Session monitor error: [Errno 2] No such file or directory: 'openclaw'
+Session monitor error: [Errno 2] No such file or directory: 'openclaw'
+Session monitor error: [Errno 2] No such file or directory: 'openclaw'
+INFO:     149.57.180.188:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/models HTTP/1.1" 200 OK
+OpenClaw models command timed out
+INFO:     100.68.97.58:0 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/agents/triage/files HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/agents/triage/files HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     100.68.97.58:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     100.68.97.58:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+Notified agent developer of task: Channel telegram no responde
+INFO:     100.68.97.58:0 - "POST /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "OPTIONS /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "OPTIONS /api/tasks HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "OPTIONS /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "OPTIONS /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "OPTIONS /api/recurring HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/chat?limit=50 HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "OPTIONS /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "OPTIONS /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "PATCH /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 431, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 313, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.clawcontroller/backend/main.py", line 2004, in update_recurring_task
+    if task and task.status not in [TaskStatus.COMPLETE]:
+                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskStatus' has no attribute 'COMPLETE'
+INFO:     201.177.252.112:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "DELETE /api/recurring/ef86e334-a1b5-4811-9e01-060e84146376 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 95, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 153, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ncx/.local/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 431, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ncx/.local/lib/python3.13/site-packages/fastapi/routing.py", line 313, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ncx/.clawcontroller/backend/main.py", line 2047, in delete_recurring_task
+    if task and task.status not in [TaskStatus.COMPLETE]:
+                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskStatus' has no attribute 'COMPLETE'
+INFO:     201.177.252.112:0 - "GET /api/recurring HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "OPTIONS /api/monitoring/gateway/status HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/monitoring/gateway/status HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "OPTIONS /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/tasks/b78b2cc6-7001-4ffe-a2c0-59a182329b66/activity?limit=50 HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "OPTIONS /api/models HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+OpenClaw models command timed out
+INFO:     201.177.252.112:0 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     100.68.97.58:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/status HTTP/1.1" 200 OK
+INFO:     201.177.252.112:0 - "GET /api/openclaw/agents HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     Shutting down
+INFO:     connection closed
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [39302]

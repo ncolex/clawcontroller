@@ -1,0 +1,12 @@
+{
+  "last_check": "2026-03-03T22:28:40.746879",
+  "last_healthy": "2026-03-03T22:27:04.452551",
+  "last_crash": "2026-03-03T22:27:48.019292",
+  "uptime_start": "2026-03-03T22:14:03.297790",
+  "crash_count": 554,
+  "restart_count": 26,
+  "consecutive_failures": 1,
+  "last_notification": "2026-03-03T22:27:48.019292",
+  "total_uptime_hours": 727.9210897947219,
+  "health_status": "crashed"
+}

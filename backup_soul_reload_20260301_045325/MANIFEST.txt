@@ -1,0 +1,27 @@
+# SOUL Hot-Reload Implementation Backup Manifest
+# Created: 2026-03-01 04:53:25
+# Backup Directory: /home/ncx/.clawcontroller/backup_soul_reload_20260301_045325/
+
+## Files Backed Up
+
+### openclaw/
+- openclaw/soul_reload.py
+- openclaw/session_soul_mixin.py
+- openclaw/__init__.py
+
+### backend/
+- backend/soul_reload.py
+- backend/session_soul_mixin.py
+
+### Root Files
+- SOUL_RELOAD_INTEGRATION.md
+- SOUL_RELOAD_SUMMARY.md
+- test_soul_reload.py
+
+## Total Files: 8
+
+## Source Location
+/home/ncx/.clawcontroller/
+
+## Purpose
+Backup of SOUL hot-reload implementation files before making changes.
