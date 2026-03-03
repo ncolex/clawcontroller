@@ -15,11 +15,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdonan90/ClawController.git"
+    "url": "git+https://github.com/ncolex/clawcontroller.git"
   },
   "homepage": "https://clawcontroller.com",
   "bugs": {
-    "url": "https://github.com/mdonan90/ClawController/issues"
+    "url": "https://github.com/ncolex/clawcontroller/issues"
   },
   "bin": {
     "clawcontroller": "./bin/clawcontroller.js"
